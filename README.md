@@ -7,7 +7,6 @@ Strings
 ```php
 $string = new NString("CPF é 12345678911");
 echo $string->numbersOnly(); //123456789
-$string = new NString("CPF é 12345678911");
 if ($string->startsWith("C")) {
 
 }
