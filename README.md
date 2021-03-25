@@ -2,6 +2,12 @@
 
 Classes para auxiliar no desenvolvimento de aplicações em PHP
 
+Instalação:
+
+```
+"jone22e/phpsupertypes": "dev-main"
+```
+
 Strings
 
 ```php
