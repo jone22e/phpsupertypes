@@ -41,4 +41,8 @@ $date->addDays(1); //26/03/2021
 if ($date->isHigherToday()) {
     
 }
+$date2 = new NDate();
+$date2->toString(); //hoje dd/mm/aaaa
+$date3 = new NDate("2021-12-31"); 
+echo $date3->daysRemaining();// = 281 (hoje é 25/03/2021)
 ```
