@@ -16,3 +16,11 @@ if ($string->startsWith("C")) {
 
 }
 ```
+
+Doubles
+```php
+$val = new NDouble(500);
+$val->toReais(2); //500,00
+$val->fromReais("1250,00");
+$val->toDouble();//500.00
+```
