@@ -2,6 +2,9 @@
    "name"             : "jone22e/phpsupertypes",
    "description"      : "description",
    "minimum-stability": "dev",
+   "type"             : "library",
+   "version"          : "1.0",
+   "prefer-stable"    : true,
    "license"          : "proprietary",
    "authors"          : [
       {
@@ -12,7 +15,7 @@
    "require"          : {
       "php": ">=7.3.0"
    },
-   "autoload": {
+   "autoload"         : {
       "psr-4": {
          "Jone22\\SuperTypes\\": "lib/types/"
       }
