@@ -3,8 +3,7 @@
    "description"      : "description",
    "minimum-stability": "dev",
    "type"             : "library",
-   "version"          : "1.0",
-   "prefer-stable"    : true,
+   "version"          : "0.0.1",
    "license"          : "proprietary",
    "authors"          : [
       {
