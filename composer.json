@@ -1,6 +1,6 @@
 {
    "name"             : "jone22e/phpsupertypes",
-   "description"      : "description",
+   "description"      : "Classes de auxilio para tipos padrão",
    "minimum-stability": "dev",
    "type"             : "library",
    "version"          : "0.0.1",
