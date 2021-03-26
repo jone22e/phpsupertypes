@@ -46,3 +46,23 @@ $date2->toString(); //hoje dd/mm/aaaa
 $date3 = new NDate("2021-12-31"); 
 echo $date3->daysRemaining();// = 281 (hoje é 25/03/2021)
 ```
+
+Coluna tipo Bytea no Postgresql para armazenamento de arquivos.
+
+```php
+//gravando no banco
+$arquivo = new NBytea();
+$arquivo->fromUpload($_FILES['arquivo']); //variável do formulário
+$sql = "insert into arquivo (colunabytea, nome, extensao) values ('{$arquivo->getBytea()}', '{$arquivo->getName()}', '{$arquivo->getType()}') ";
+
+//lendo do banco
+//$col = pg_fetch_array
+$arquivo = new NBytea($col['colunabytea'], $col['nome'], $col['extensao']);
+
+//download direto
+$arquivo->download();
+
+//gravar em diretório
+$arquivo->savetoFile("/home/user/file.ext");
+```
+
